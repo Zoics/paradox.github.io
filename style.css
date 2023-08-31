@@ -1,0 +1,324 @@
+body {
+  font-family: "Ysabeau Office", sans-serif;
+  margin: 0;
+}
+/* .opening {
+  animation: hide 2s 3s forwards;
+  background-color: rgb(170, 222, 204);
+  z-index: 100;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: absolute;
+} */
+.nav {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  height: 40px;
+  background-color: rgb(44, 88, 109);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  display: inline-flex;
+}
+li {
+  padding: 20px;
+}
+li:hover {
+  background-color: rgb(19, 33, 59);
+}
+li:hover a {
+  color: white;
+}
+p {
+  font-size: 20px;
+  text-align: center;
+}
+.nav a {
+  color: white;
+}
+.pengertian {
+  width: 920px;
+  height: fit-content;
+  text-align: center;
+  padding: 25px;
+  border: 2px solid grey;
+  background-color: azure;
+
+  margin-left: 175px;
+}
+#paradoxtitle1 {
+  font-family: "Just Me Again Down Here", cursive;
+  font-size: 80px;
+  color: rgb(91, 45, 18);
+}
+.paradox {
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  padding: 25px;
+  border: 2px solid grey;
+  background-color: azure;
+  margin: 25px;
+  margin-left: 310px;
+}
+.paragraph {
+  width: 750px;
+  text-align: center;
+}
+.jumbo {
+  text-align: center;
+  width: 100%;
+}
+.jumbo img {
+  width: 100%;
+  height: auto;
+}
+.selectioncontainer {
+  margin: 25px;
+  width: auto;
+  border: 1px solid black;
+  padding: 25px;
+  border-radius: 15px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.selectionbox {
+  text-align: center;
+  background-color: rgb(129, 203, 175);
+  border: 1px solid rgb(62, 62, 160);
+  margin: 25px;
+  border-radius: 15px;
+  padding: 20px;
+  width: fit-content;
+  transition: 0.5s;
+}
+.selectionbox2 {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(62, 62, 160);
+  margin: 25px;
+  border-radius: 15px;
+  padding: 20px;
+  width: fit-content;
+  transition: 0.5s;
+}
+.selectionbox:hover {
+  scale: calc(1.15);
+  background-color: rgb(206, 117, 95);
+  border: 1px solid rgb(232, 0, 0);
+  box-shadow: 15px 12px rgb(142, 142, 142);
+}
+.selectionbox2:hover {
+  scale: calc(1.15);
+  background-color: rgb(206, 117, 95);
+  border: 1px solid rgb(232, 0, 0);
+  box-shadow: 15px 12px rgb(142, 142, 142);
+}
+/*/.selectioncontainer .selectionbox:hover {
+  transform: scale(1.15);
+  background-color: brown;
+}/*/
+.selectionbox img {
+  height: 175px;
+  width: auto;
+}
+.selectionbox2 img {
+  height: 175px;
+  width: auto;
+}
+
+.button a {
+  background-color: white;
+  border-radius: 12px;
+  padding: 10px;
+  width: fit-content;
+  text-decoration: solid;
+  transition: 0.3s;
+}
+.button a:hover {
+  color: white;
+  background-color: black;
+}
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(237, 232, 232);
+  border-radius: 15px;
+  text-align: center;
+  padding-bottom: 10px;
+  color: rgb(44, 88, 109);
+}
+footer h2 {
+  color: rgb(44, 88, 109);
+}
+.logo-footer {
+  font-size: 25px;
+  color: rgb(44, 88, 109);
+}
+footer hr {
+  color: rgb(0, 0, 0);
+  height: 1px;
+  width: 100%;
+  border: none;
+}
+.contact-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 100px;
+}
+.illustration-img {
+  margin: 0;
+  width: 800px;
+}
+.contact {
+  display: inline-block;
+  margin: 10px 30px;
+  text-align: center;
+}
+.contact2 {
+  width: 100%;
+  display: flex;
+  padding-top: 55px;
+  justify-content: center;
+}
+.profile-contact-img {
+  width: 200px;
+}
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.input-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-style: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  height: 100%;
+}
+.input-item:focus + .form-label {
+  top: -5px;
+  left: -2px;
+  font-size: 10px;
+}
+.input-item:not(:placeholder-shown).inputitem:not(:focus) + .form-label {
+  top: -2px;
+  left: -2px;
+  font-size: 10px;
+  color: rgb(138, 130, 130);
+}
+.input-item:not(:placeholder-shown).inputitem:not(:focus) + .form-label {
+  top: -2px;
+  left: -2px;
+  font-size: 10px;
+  color: rgb(138, 130, 130);
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.form-label {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.form-input {
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid grey;
+  outline: none;
+  height: 48px;
+  margin-bottom: 15px;
+  padding: 0;
+}
+.form-textarea {
+  position: relative;
+}
+.form-label {
+  transition: 0.25s ease-out;
+}
+#submit {
+  border-style: none;
+  border-radius: 25px;
+  color: aliceblue;
+  background-color: rgb(38, 70, 83);
+  margin: 5px;
+  padding: 15px;
+  cursor: pointer;
+}
+.paradoxbox {
+  display: flex;
+}
+.model {
+  text-align: center;
+  width: fit-content;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: white;
+
+  z-index: 100;
+}
+.model h3 {
+  padding: 0;
+  margin: 0;
+}
+.model span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  cursor: pointer;
+}
+.model h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 4vw;
+}
+.model img {
+  max-width: 60%;
+}
+.model-container {
+  background-color: rgba(0, 0, 0, 0.404);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  z-index: 10;
+}
+.btn-out {
+  float: left;
+}
+.btn-out:hover {
+  cursor: pointer;
+}
+.btn-out p {
+  font-size: x-large;
+}
